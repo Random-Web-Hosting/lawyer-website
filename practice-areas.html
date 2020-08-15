@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Patrick Law Firm | Practice Areas</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<style type="text/css">
+#showcase-attorney{
+   	position: relative;
+	width: 100%;
+	height: 450px;
+	color: white;
+	text-align: center;
+	background: url('./images/showcase.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#showcase-attorney:before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+}
+#showcase-attorney div{
+	position: relative;
+	padding-top: 10%;
+	text-shadow: 1px 1px black;
+}
+#practice-areas{
+	position: relative;
+	width: 100%;
+	padding: 100px 40px;
+}
+#practice-areas .row{
+	margin-left: 0 !important;
+}
+#practice-areas .col-lg-4{
+	margin-bottom: 50px;
+}
+#practice-areas .category{
+	padding-top: 50px;
+	background: #fcfcfb;
+}
+#practice-areas .category div{
+	margin-bottom: 30px;
+}
+#practice-areas .category div h5{
+	padding-bottom: 10px;
+}
+#practice-areas .category div b{
+	position: relative;
+	display: block;
+	width: 90%;
+	height: 1px;
+	background: #ffd100;
+}
+#practice-areas .category ul{
+	position: relative;
+	width: 90%;
+	left: 0%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#practice-areas .category ul li{
+	position: relative;
+	cursor: pointer;
+	padding: 12px 0;
+	font-weight: 550;
+	padding-left: 15px;
+	background: transparent;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+#practice-areas .category ul li:hover{
+	background: #192134;
+	color: white;
+}
+</style>
+<body>
+
+<header>
+	<h5>CALL US TOLL FREE (855) 456-7890</h5>
+</header>
+
+<section id="showcase-attorney">
+	<div>
+		<h1>Meet Our Experinced Attorneys</h1>
+	    <h4>By Scheduling Your Free Appointment</h4>
+	    <h4>call us at below Toll Free number</h4>
+	    <h3>(855) 456-7890</h3>
+	</div>
+</section>
+
+<nav class="navbar navbar-dark navbar-expand-lg">
+	<a class="navbar-brand" href="index.html">Patrick Law Firm</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse"  id="navbarNav">
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+		    <a class="nav-link" href="index.html">Home</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="attorneys.html">Attorneys</a>
+		  </li>
+		  <li class="nav-item dropdown">
+		    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      Practice Areas
+		    </a>
+		    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a id="accident" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Accident</a>
+				<a id="injuries" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Catastrophic Injuries</a>
+				<a id="liability" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Premises Liability</a>
+				<a id="sexual-victims" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Sexual Assault Victims</a>
+				<a id="drunk-driving" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Drunk Driving Accident</a>
+				<a id="wrongful-death" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Wrongful Death</a>
+				<a id="domestic-violence" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Domestic Violence</a>
+				<a id="medical-malpractice" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Medical Malpractice</a>
+				<a id="defective-products" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Defective Products</a>
+				<a id="theft/fraud" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Theft/Fraud</a>
+				<a id="government-negligence" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Government Negligence & Liability</a>
+				<a id="defective-medical" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Defective Medical Devices And Drugs</a>
+		    </div>
+		  </li>
+		   <li class="nav-item">
+		    <a class="nav-link" href="faq.html">FAQ</a>
+		  </li>
+		   <li class="nav-item">
+		    <a class="nav-link" href="contact.html">Contact</a>
+		  </li>
+		</ul>
+	</div>
+</nav>
+
+<section id="practice-areas">
+	<div class="row">
+		<div class="category col-lg-4 col-md-5 col-sm-12 col-12">
+			<div>
+				<h5>Related Links</h5>
+				<b></b>
+			</div>
+			<ul>
+				<li class="accident">Accident</li>
+				<li class="injuries">Catastrophic Injuries</li>
+				<li class="liability">Premises Liability</li>
+				<li class="sexual-victims">Sexual Assault Victims</li>
+				<li class="drunk-driving">Drunk Driving Accident</li>
+				<li class="wrongful-death">Wrongful Death</li>
+				<li class="domestic-violence">Domestic Violence</li>
+				<li class="medical-malpractice">Medical Malpractice</li>
+				<li class="defective-products">Defective Products</li>
+				<li class="theft/fraud">Theft/Fraud</li>
+				<li class="government-negligence">Government Negligence & Liability</li>
+				<li class="defective-medical">Defective Medical Devices And Drugs</li>
+			</ul>
+		</div>
+		<div class="case-detail col-lg-8 col-md-7 col-sm-12 col-12">
+			
+		</div>
+	</div>
+</section>
+
+<section id="contact-number">
+	<div class="row">
+		<div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+			<img src="images/contact-one.jpg">
+		</div>
+		<div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+			<div class="contact-content">
+				<i class="fas fa-phone"></i>
+				<h4>Schedule free consultation</h4>
+				<p>To schedule your free consultation, please contact us to our toll free number below.</p>
+				<h5>(855) 456-7123</h5>
+			</div>
+		</div>
+		<div class="box last-child col-lg-4 col-md-4 col-sm-12 col-12">
+			<img src="images/contact-two.jpg">
+		</div>
+	</div>
+</section>
+
+<section id="testimonials">
+	<div class="container">
+		<i class="fas fa-chevron-left"></i>
+		<div class="passengers-container">
+			<div class="passenger">
+				<img src="images/testimonial-one.jpg">
+				<div>
+			    	<h5 class="status">Client</h5>
+					<h4 class="name">Peter Philips</h4>
+				</div>
+				<p class="review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum erat, venenatis nec suscipit eu, pulvinar sit amet erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum erat, venenatis nec suscipit eu, pulvinar sit amet erat.Lorem ipsum dolor sit amet."</p>
+			</div>
+			<div class="passenger">
+				<img src="images/testimonial-two.jpg">
+				<div>
+			    	<h5 class="status">Client</h5>
+					<h4 class="name">Bree Alex</h4>
+				</div>
+				<p class="review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum erat, venenatis nec suscipit eu, pulvinar sit amet erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum erat, venenatis nec suscipit eu, pulvinar sit amet erat.Lorem ipsum dolor sit amet."</p>
+			</div>
+			<div class="passenger">
+				<img src="images/testimonial-three.jpg">
+				<div>
+			    	<h5 class="status">Client</h5>
+					<h4 class="name">John James</h4>
+				</div>
+				<p class="review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum erat, venenatis nec suscipit eu, pulvinar sit amet erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum erat, venenatis nec suscipit eu, pulvinar sit amet erat.Lorem ipsum dolor sit amet."</p>
+			</div>
+		</div>
+		<i class="fas fa-chevron-right"></i>
+	</div>
+</section>
+
+<footer>
+	<div class="upper-layer">
+		<div class="row">
+			<div id="first-column" class="col-lg-3 col-md-6 col-sm-6">
+				<h5>Patrick <span>Law Firm</span></h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales luctus lorem, at feugiat metus pharetra nec. Mauris elit nisi, pretium ut ante viverra, elementum eleifend lorem.</p>
+				<div class="social-links">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>	
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6">
+				<h5>Contact <span>Us</span></h5>
+				<div class="address">
+					<p>Address : <span>Broadway San Francisco, CA 94133</span></p>
+				    <p>Email : <span>dentalcare@gmail.com</span></p>
+					<p>Phone : <span>123 456 7890</span></p>
+					<p>Toll Free : <span>(855) 456 7123</span></p>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<h5>Quick <span>Links</span></h5>
+				<ul>
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="practice-areas.html">Practice Areas</a>
+					</li>
+					<li>
+						<a href="faq.html">Faq</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="newsletter col-lg-4 col-md-6 col-sm-6">
+				<h5>News<span>letter</span></h5>
+				<p>Subscribe To Our Newsletter <br/> to get updated on our weekly offer</p>
+    			<input type="text" name="email" placeholder="Email" autocomplete="off">
+    			<input type="submit" name="btn" value="Sign up">
+			</div>
+		</div>
+	</div>
+	<div class="bottom-layer">
+		<p>Copyright &copy 2019 Patrick Law Firm All rights Reserved  <br class="divider" /> Designed by <span>Alamdar Development</span></p>
+	</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/practice-areas.js"></script>
+</body>
+</html>

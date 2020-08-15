@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attorney Website | Contact</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<style type="text/css">
+#showcase-contact{
+   	position: relative;
+	width: 100%;
+	height: 450px;
+	color: white;
+	text-align: center;
+	background: url('./images/showcase.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#showcase-contact:before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.3);
+}
+#showcase-contact div{
+	position: relative;
+	padding-top: 10%;
+}
+</style>
+<body>
+
+<header>
+	<h5>CALL US TOLL FREE (855) 456-7890</h5>
+</header>
+
+<section id="showcase-contact">
+	<div>
+		<h1>Contact Us</h1>
+	    <h2>And Get Your Free Consultation Appointment</h2>
+	    <h3>(855) 456-7890</h3>
+	</div>
+</section>
+
+<nav class="navbar navbar-dark navbar-expand-lg">
+	<a class="navbar-brand" href="index.html">Patrick Law Firm</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse"  id="navbarNav">
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+		    <a class="nav-link" href="index.html">Home</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="attorneys.html">Attorneys</a>
+		  </li>
+		  <li class="nav-item dropdown">
+		    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      Practice Areas
+		    </a>
+		    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a id="accident" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Accident</a>
+				<a id="injuries" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Catastrophic Injuries</a>
+				<a id="liability" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Premises Liability</a>
+				<a id="sexual-victims" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Sexual Assault Victims</a>
+				<a id="drunk-driving" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Drunk Driving Accident</a>
+				<a id="wrongful-death" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Wrongful Death</a>
+				<a id="domestic-violence" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Domestic Violence</a>
+				<a id="medical-malpractice" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Medical Malpractice</a>
+				<a id="defective-products" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Defective Products</a>
+				<a id="theft/fraud" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Theft/Fraud</a>
+				<a id="government-negligence" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Government Negligence & Liability</a>
+				<a id="defective-medical" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Defective Medical Devices And Drugs</a>
+		    </div>
+		  </li>
+		   <li class="nav-item">
+		    <a class="nav-link" href="faq.html">FAQ</a>
+		  </li>
+		   <li class="nav-item">
+		    <a class="nav-link" href="contact.html">Contact</a>
+		  </li>
+		</ul>
+	</div>
+</nav>
+
+<section id="contact-number">
+	<div class="row">
+		<div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+			<img src="images/contact-one.jpg">
+		</div>
+		<div class="box col-lg-4 col-md-6 col-sm-6 col-12">
+			<div class="contact-content">
+				<i class="fas fa-phone"></i>
+				<h4>Schedule free consultation</h4>
+				<p>To schedule your free consultation, please contact us to our toll free number below.</p>
+				<h5>(855) 456-7123</h5>
+			</div>
+		</div>
+		<div class="box last-child col-lg-4 col-md-4 col-sm-12 col-12">
+			<img src="images/contact-two.jpg">
+		</div>
+	</div>
+</section>
+
+<section id="contact" class="container-fluid">
+	<div class="row">
+		<iframe class="col-lg-6 col-md-6 col-sm-12 col-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201880.51115438552!2d-122.57768437848272!3d37.757617097271385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1563577931257!5m2!1sen!2sus"></iframe>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+			<h3>Or submit an inquiry to our email</h3>
+			<form>
+				<input type="text" placeholder="Full Name">
+				<input type="text" placeholder="Phone Number">
+				<input type="text" placeholder="Full Name">
+				<input type="message" placeholder="Briefly Describe Your Case">
+				<input type="submit" value="Submit Message">
+			</form>
+		</div>
+	</div>
+</section>
+
+<!-- Branch Location -->
+<section id="branch-location">
+	<div class="container">
+	    <div class="row">
+	    	<div class="box col-lg-4 col-md-4 col-sm-12">
+	    		<div class="branch-wrap">
+		     		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.1632524368783!2d-122.41946948519075!3d37.76277012062407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e3b48de6d8d%3A0xd6200882cf4ab634!2s699-601+S+Van+Ness+Ave%2C+San+Francisco%2C+CA+94110!5e0!3m2!1sen!2sus!4v1563642055841!5m2!1sen!2sus"></iframe>
+		     		<div>
+		     			<h5>San Francisco Office</h5>
+		     			<p class="address"><i class="fas fa-map-marker-alt"></i> S Van Ness Ave San Francisco, CA 94110</p>
+		     			<p><i class="fas fa-phone"></i> 123-456-7890</p>
+		     			<p><i class="fas fa-envelope"></i> mylocation@gmail.com</p>
+		     		</div>
+		     	</div>
+	    	</div>
+	     	<div class="box col-lg-4 col-md-4 col-sm-12">
+	     		<div class="branch-wrap">
+		     		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d793.0983389116589!2d-121.89198507082651!3d37.33319516508255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcca4b90b9ba1%3A0x75faaf8673004e77!2sS+San+Pedro+St%2C+San+Jose%2C+CA+95113!5e0!3m2!1sen!2sus!4v1563640664998!5m2!1sen!2sus"></iframe>
+		     		<div>
+		     			<h5>San Jose Office</h5>
+		     			<p class="address"><i class="fas fa-map-marker-alt"></i> S San Pedro St San Jose, CA 95113</p>
+		     			<p><i class="fas fa-phone"></i> 123-456-7890</p>
+		     			<p><i class="fas fa-envelope"></i> mylocation@gmail.com</p>
+		     		</div>
+		     	</div>
+	     	</div>
+	     	<div class="box col-lg-4 col-md-4 col-sm-12">
+	     		<div class="branch-wrap">
+		     		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.5325295754217!2d-118.24749767081666!3d34.04053321008364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c633e185f443%3A0xc23842cf5b206a64!2s712-688+San+Pedro+St%2C+Los+Angeles%2C+CA+90014!5e0!3m2!1sen!2sus!4v1563640742062!5m2!1sen!2sus"></iframe>
+		     		<div>
+		     			<h5>Los Angeles Office</h5>
+		     			<p class="address"><i class="fas fa-map-marker-alt"></i> 712-688 San Pedro St Los Angeles, CA 90014</p>
+		     			<p><i class="fas fa-phone"></i> 123-456-7890</p>
+		     			<p><i class="fas fa-envelope"></i> mylocation@gmail.com</p>
+		     		</div>
+		     	</div>
+	     	</div>
+	     	
+	    </div>
+	</div>
+</section>
+
+<footer>
+	<div class="upper-layer">
+		<div class="row">
+			<div id="first-column" class="col-lg-3 col-md-6 col-sm-6">
+				<h5>Patrick <span>Law Firm</span></h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales luctus lorem, at feugiat metus pharetra nec. Mauris elit nisi, pretium ut ante viverra, elementum eleifend lorem.</p>
+				<div class="social-links">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>	
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6">
+				<h5>Contact <span>Us</span></h5>
+				<div class="address">
+					<p>Address : <span>Broadway San Francisco, CA 94133</span></p>
+				    <p>Email : <span>dentalcare@gmail.com</span></p>
+					<p>Phone : <span>123 456 7890</span></p>
+					<p>Toll Free : <span>(855) 456 7123</span></p>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<h5>Quick <span>Links</span></h5>
+				<ul>
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="practice-areas.html">Practice Areas</a>
+					</li>
+					<li>
+						<a href="faq.html">Faq</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="newsletter col-lg-4 col-md-6 col-sm-6">
+				<h5>News<span>letter</span></h5>
+				<p>Subscribe To Our Newsletter <br/> to get updated on our weekly offer</p>
+    			<input type="text" name="email" placeholder="Email" autocomplete="off">
+    			<input type="submit" name="btn" value="Sign up">
+			</div>
+		</div>
+	</div>
+	<div class="bottom-layer">
+		<p>Copyright &copy 2019 Patrick Law Firm All rights Reserved  <br class="divider" /> Designed by <span>Alamdar Development</span></p>
+	</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+const contactDiv = document.querySelector('#contact-number .box .contact-content');
+function windowScroll() {
+	document.addEventListener('scroll', ()=>{
+		if(window.pageYOffset <= 596){
+			document.querySelector('.navbar').style.position = 'relative';
+		}else{
+			document.querySelector('.navbar').style.position = 'fixed';
+		}
+	})
+}
+function divSize(){
+	let contactDivOffset = contactDiv.offsetHeight / 2;
+	contactDiv.style.transform = `translateY(-${contactDivOffset}px)`;
+}
+
+function setNavStorage(e){
+	localStorage.setItem('navbar-id', e.id);
+	window.open('practice-areas.html');
+}
+
+windowScroll();
+divSize();
+
+</script>
+</body>
+</html>

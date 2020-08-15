@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attorney Website | FAQ</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<style type="text/css">
+#showcase-faq{
+	position: relative;
+	width: 100%;
+	height: 350px;
+	color: white;
+	text-align: center;
+	background: url('./images/showcase.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#showcase-faq:before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.3);
+}
+#showcase-faq h1{
+	position: relative;
+	font-size: 40px;
+	padding-top: 10%;
+}
+#faq{
+	position: relative;
+	width: 90%;
+	height: 100%;
+	padding: 40px 3%;
+}
+#faq ul{
+	margin-top: 30px;
+	list-style: none;
+}
+#faq ul li{
+	position: relative;
+	margin: 40px 0;
+	padding-right: 7%;
+	border-bottom: 1px solid rgba(25,33,52,0.8);
+}
+#faq ul li h5{
+	cursor: pointer;
+	font-weight: 650;
+	margin-bottom: 10px;
+}
+#faq ul li p{
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-left: 15px;
+	transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 767px){
+#faq{
+	width: 100%;
+	padding: 40px 1%;
+}
+#faq ul li h5{
+	font-size: 15px;
+}
+#faq ul li p{
+    font-size: 14px;
+}
+}
+
+@media (max-width: 420px){
+#faq{
+	padding: 40px 3%;
+}
+#faq ul li{
+	padding-right: 5%;
+}
+#faq ul li h5{
+	font-size: 16px;
+}
+#faq ul li p{
+	font-size: 15px;
+}
+}
+</style>
+<body>
+
+<nav class="navbar navbar-dark navbar-expand-lg">
+	<a class="navbar-brand" href="index.html">Patrick Law Firm</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse"  id="navbarNav">
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+		    <a class="nav-link" href="index.html">Home</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="attorneys.html">Attorneys</a>
+		  </li>
+		  <li class="nav-item dropdown">
+		    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      Practice Areas
+		    </a>
+		    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a id="accident" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Accident</a>
+				<a id="injuries" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Catastrophic Injuries</a>
+				<a id="liability" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Premises Liability</a>
+				<a id="sexual-victims" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Sexual Assault Victims</a>
+				<a id="drunk-driving" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Drunk Driving Accident</a>
+				<a id="wrongful-death" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Wrongful Death</a>
+				<a id="domestic-violence" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Domestic Violence</a>
+				<a id="medical-malpractice" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Medical Malpractice</a>
+				<a id="defective-products" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Defective Products</a>
+				<a id="theft/fraud" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Theft/Fraud</a>
+				<a id="government-negligence" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Government Negligence & Liability</a>
+				<a id="defective-medical" onclick="setNavStorage(this)"  class="dropdown-item" href="#">Defective Medical Devices And Drugs</a>
+		    </div>
+		  </li>
+		   <li class="nav-item">
+		    <a class="nav-link" href="faq.html">FAQ</a>
+		  </li>
+		   <li class="nav-item">
+		    <a class="nav-link" href="contact.html">Contact</a>
+		  </li>
+		</ul>
+	</div>
+</nav>
+
+<section id="showcase-faq">
+	<h1>Frequently Asked Question</h1>
+</section>
+
+<section id="faq">
+	<ul>
+		<li>
+			<h5>1. How much do you charge to review a case?</h5>
+			<p>An initial appointment to discuss the facts of a potential case is free. Similarly, in medical negligence cases, we do not charge a fee to review medical records. In most cases, where it appears that the claim is meritorious, we will advance the costs necessary to investigate and prosecute the claim. In the event we undertake formal representation, any costs advanced are reimbursed to us at the conclusion of the case, assuming we are able to make a recovery on your behalf.</p>
+		</li>
+		<li>
+			<h5>2. What is a contingency fee?</h5>
+			<p>A contingency fee is a legal fee which is dependent upon the successful outcome of a claim. Most attorneys who specialize in bodily injury claims utilize a contingency fee agreement because injured clients often cannot afford to pay an attorney for service rendered on an hourly basis. The ultimate damage recovery provides a fund from which the attorneys’ fees are paid. If there is no recovery, we receive no fee. Contingency fees are open to negotiation between attorney and client; however, in certain types of cases (claims on behalf of children, claims against health care providers, claims against the Federal Government, etc.) maximum fee limits are established by statute. Contingency fee agreements must be in writing signed by both the attorney and the client.</p>
+		</li>
+		<li>
+			<h5>3. What is the time limit (statute of limitations) for me to make a claim for injuries?</h5>
+			<p>It is impossible in this space to set forth the rules that apply in all cases. Different statutes of limitation govern different types of cases. Under some circumstances, statutes of limitation for children are longer than those for adults. Special statutes of limitation governing the filing of claims against public entities may be as short as six months from the date of injury. Where injury does not manifest itself for many years after an event or exposure (such as during a period of latency after exposure to harmful chemicals) the statute of limitations may not run for many, many years. Because the running of the statute of limitations is dependent upon the facts of an individual case, if you believe that you have a claim where the statute of limitations may be running, we urge you to contact one of our qualified professionals as soon as possible to arrange for a free consultation.</p>
+		</li>
+		<li>
+			<h5>4. How much will I recover from a settlement or judgment?</h5>
+			<p>There is no formula or standardized method for evaluating the likely settlement value or jury verdict potential in a given case. Case value is case-specific. It depends upon factors including liability, nature and extent of injuries, nature and extent of permanent disability, economic losses (including lost wages and medical bills), disfigurement, embarrassment, and a host of other considerations. While our professionals can provide ballpark evaluations based upon results in trials and settlements of similar cases, no precise method exists for predicting how much an injured individual will recover in a given case.</p>
+		</li>
+		<li>
+			<h5>5. Will my case go to trial?</h5>
+			<p>The majority of claims handled by our office settle before trial. Statewide, approximately 8 out of 10 cases settle without court or jury trial. However, because we cannot predict whether or not a case will settle without trial, our attorneys prepare all cases in the same way, assuming that if a reasonable and fair settlement cannot be reached, we are prepared to take the matter to trial on behalf of our clients.</p>
+		</li>
+		<li>
+			<h5>6. Are there special rules for claims against doctors or hospitals?</h5>
+			<p>In California, doctors and hospitals are protected by special rules which limit damages that can be awarded against them. These special rules are part of the Medical Injury Compensation Reform Act (MICRA). Since 1976, regardless of how badly a person is hurt, neither doctors nor hospitals can be forced to pay more than $250,000 for pain and suffering. MICRA also provides that damages over $50,000 must be paid in periodic payments over the life of the victim. Other MICRA provisions require special notice to doctors and hospitals before suit, restrictions on attorneys’ fees, and special statute of limitations provisions. Repeated efforts to adjust the damage limits have failed because of the strength of lobbyists for healthcare interests. In the meantime, the profitability of medical malpractice insurance companies has soared.</p>
+		</li>
+		<li>
+			<h5>7. Do you handle cases for children?</h5>
+			<p>Much of our work involves claims on behalf of clients under the age of 18. Special rules govern the prosecution of children’s cases. Any settlements or judgment are subject to court supervision, and all costs and expenditures must also be approved by a Superior Court judge. Special statutes of limitation govern the prosecution of children’s cases. Because the statutes of limitation are different whether the case is one for medical negligence, product liability, vehicular negligence, injuries occurring in the birth process, etc., it is important to contact a professional as soon as possible to determine when a child’s statute of limitations expires.</p>
+		</li>
+		<li>
+			<h5>8. What if I was hurt at work?</h5>
+			<p>Whenever a person is hurt at work they are automatically entitled to the benefits of worker’s compensation insurance. We do not handle worker’s compensation claims, but can usually provide the names of certified specialists in your community. In addition to worker’s compensation, many times the right to bring an action against someone other than your employer also exists. These are called “third party cases.” Prompt investigation of third party cases is critical. If you were hurt at work and you believe it was the fault of someone other than your employer, it is critical that prompt investigation be undertaken to secure evidence, identify witnesses, and determine whether sufficient facts exist to justify a claim against another person or entity.</p>
+		</li>
+		<li>
+			<h5>9. I have heard that Kaiser members do not have the right to bring suit for medical malpractice, is this true?</h5>
+			<p>Yes. Since the early 1970’s, all Kaiser members have been required to resolve claims for medical malpractice through the utilization of the Kaiser Permanente Arbitration System. Although Kaiser members have attempted to challenge the system on various grounds, it has been repeatedly determined to be valid and constitutional by the California courts. The Kaiser Arbitration System has recently undergone significant changes. The differences between the Kaiser Arbitration System and Superior Court suits are too numerous to list here. Our firm has handled hundreds of matters under the Kaiser system over the last 30 years. Clients with potential questions or claims versus Kaiser, should contact us for an appointment.</p>
+		</li>
+		<li>
+			<h5>10. What if I have a claim against a city, county, state or other government agency?</h5>
+			<p>Claims against public entities are subject to the California Government Code. This code imposes special administrative claim filing requirements, and provides statutory immunities and other protections to government entities. The Government Code is thousands of pages long, and for that reason, it is impossible to describe in detail all of the idiosyncrasies peculiar to claims against public entities. We have handled cases against cities, counties, school districts, water districts, states, the federal government, federal government agencies, branches of the military, and other government bodies too numerous to mention. Because the claims filing period against state and municipal agencies is the shortest of all statutes of limitation (180 days) it is very important that a person who believes he or she has been injured through government action contact an attorney at once.</p>
+		</li>
+		<li>
+			<h5>11. I was injured in a traffic accident by an uninsured motorist; what are my options?</h5>
+			<p>Although California motorists are required to have insurance, the fact of the matter is that there are still drivers on the road who do not have insurance. By law, all California insurers must sell uninsured motorist coverage, and underinsured motorist coverage, to their customers. According to a statutory scheme set forth in Insurance Code §11580.2, insured motorists arbitrate with their own carrier when they are injured by an uninsured motorist. The carrier then has the right to seek reimbursement (subrogation) from the uninsured motorist. Our attorneys have settled and arbitrated hundreds of uninsured motorist cases and are well versed with the special requirements of the uninsured motorist law.</p>
+		</li>
+		<li>
+			<h5>12. I have a question that you have not answered.</h5>
+			<p>Our attorneys are available to answer questions over the phone or via e-mail. However, the best way to find out about a particular case is to arrange for a free appointment. Please telephone us to our toll free number at (855) 123-3249 or (844) 759-6713 locally, or e-mail us at patricklawfirm@gmail.com.</p>
+		</li>
+	</ul>
+</section>
+
+<section id="testimonials">
+	<div class="container">
+		<i class="fas fa-chevron-left"></i>
+		<div class="passengers-container">
+			<div class="passenger">
+				<img src="images/testimonial-one.jpg">
+				<div>
+			    	<h5 class="status">Client</h5>
+					<h4 class="name">Peter Philips</h4>
+				</div>
+				<p class="review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum erat, venenatis nec suscipit eu, pulvinar sit amet erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum erat, venenatis nec suscipit eu, pulvinar sit amet erat.Lorem ipsum dolor sit amet."</p>
+			</div>
+			<div class="passenger">
+				<img src="images/testimonial-two.jpg">
+				<div>
+			    	<h5 class="status">Client</h5>
+					<h4 class="name">Bree Alex</h4>
+				</div>
+				<p class="review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum erat, venenatis nec suscipit eu, pulvinar sit amet erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum erat, venenatis nec suscipit eu, pulvinar sit amet erat.Lorem ipsum dolor sit amet."</p>
+			</div>
+			<div class="passenger">
+				<img src="images/testimonial-three.jpg">
+				<div>
+			    	<h5 class="status">Client</h5>
+					<h4 class="name">John James</h4>
+				</div>
+				<p class="review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum erat, venenatis nec suscipit eu, pulvinar sit amet erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum erat, venenatis nec suscipit eu, pulvinar sit amet erat.Lorem ipsum dolor sit amet."</p>
+			</div>
+		</div>
+		<i class="fas fa-chevron-right"></i>
+	</div>
+</section>
+
+<section id="branch-location">
+	<div class="container">
+	    <div class="row">
+	    	<div class="box col-lg-4 col-md-4 col-sm-12">
+	    		<div class="branch-wrap">
+		     		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.1632524368783!2d-122.41946948519075!3d37.76277012062407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e3b48de6d8d%3A0xd6200882cf4ab634!2s699-601+S+Van+Ness+Ave%2C+San+Francisco%2C+CA+94110!5e0!3m2!1sen!2sus!4v1563642055841!5m2!1sen!2sus"></iframe>
+		     		<div>
+		     			<h5>San Francisco Office</h5>
+		     			<p class="address"><i class="fas fa-map-marker-alt"></i> S Van Ness Ave San Francisco, CA 94110</p>
+		     			<p><i class="fas fa-phone"></i> 123-456-7890</p>
+		     			<p><i class="fas fa-envelope"></i> mylocation@gmail.com</p>
+		     		</div>
+		     	</div>
+	    	</div>
+	     	<div class="box col-lg-4 col-md-4 col-sm-12">
+	     		<div class="branch-wrap">
+		     		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d793.0983389116589!2d-121.89198507082651!3d37.33319516508255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcca4b90b9ba1%3A0x75faaf8673004e77!2sS+San+Pedro+St%2C+San+Jose%2C+CA+95113!5e0!3m2!1sen!2sus!4v1563640664998!5m2!1sen!2sus"></iframe>
+		     		<div>
+		     			<h5>San Jose Office</h5>
+		     			<p class="address"><i class="fas fa-map-marker-alt"></i> S San Pedro St San Jose, CA 95113</p>
+		     			<p><i class="fas fa-phone"></i> 123-456-7890</p>
+		     			<p><i class="fas fa-envelope"></i> mylocation@gmail.com</p>
+		     		</div>
+		     	</div>
+	     	</div>
+	     	<div class="box col-lg-4 col-md-4 col-sm-12">
+	     		<div class="branch-wrap">
+		     		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.5325295754217!2d-118.24749767081666!3d34.04053321008364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c633e185f443%3A0xc23842cf5b206a64!2s712-688+San+Pedro+St%2C+Los+Angeles%2C+CA+90014!5e0!3m2!1sen!2sus!4v1563640742062!5m2!1sen!2sus"></iframe>
+		     		<div>
+		     			<h5>Los Angeles Office</h5>
+		     			<p class="address"><i class="fas fa-map-marker-alt"></i> 712-688 San Pedro St Los Angeles, CA 90014</p>
+		     			<p><i class="fas fa-phone"></i> 123-456-7890</p>
+		     			<p><i class="fas fa-envelope"></i> mylocation@gmail.com</p>
+		     		</div>
+		     	</div>
+	     	</div>
+	     	
+	    </div>
+	</div>
+</section>
+
+<footer>
+	<div class="upper-layer">
+		<div class="row">
+			<div id="first-column" class="col-lg-3 col-md-6 col-sm-6">
+				<h5>Patrick <span>Law Firm</span></h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales luctus lorem, at feugiat metus pharetra nec. Mauris elit nisi, pretium ut ante viverra, elementum eleifend lorem.</p>
+				<div class="social-links">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>	
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6">
+				<h5>Contact <span>Us</span></h5>
+				<div class="address">
+					<p>Address : <span>Broadway San Francisco, CA 94133</span></p>
+				    <p>Email : <span>dentalcare@gmail.com</span></p>
+					<p>Phone : <span>123 456 7890</span></p>
+					<p>Toll Free : <span>(855) 456 7123</span></p>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<h5>Quick <span>Links</span></h5>
+				<ul>
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="practice-areas.html">Practice Areas</a>
+					</li>
+					<li>
+						<a href="faq.html">Faq</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="newsletter col-lg-4 col-md-6 col-sm-6">
+				<h5>News<span>letter</span></h5>
+				<p>Subscribe To Our Newsletter <br/> to get updated on our weekly offer</p>
+    			<input type="text" name="email" placeholder="Email" autocomplete="off">
+    			<input type="submit" name="btn" value="Sign up">
+			</div>
+		</div>
+	</div>
+	<div class="bottom-layer">
+		<p>Copyright &copy 2019 Patrick Law Firm All rights Reserved  <br class="divider" /> Designed by <span>Alamdar Development</span></p>
+	</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+const prev = document.querySelector('#testimonials .fa-chevron-left');
+const next = document.querySelector('#testimonials .fa-chevron-right');
+const client = document.querySelector('#testimonials .passengers-container');
+const faqTitle = document.querySelectorAll('#faq ul li h5');
+let count = 0;
+
+function faqDive() {
+	faqTitle.forEach(title =>{
+	    title.addEventListener('click', ()=>{
+	    	if(title.parentElement.lastElementChild.style.height !== '100%'){
+	    		title.parentElement.lastElementChild.style.height = '100%';
+	    	}else{
+	    	    title.parentElement.lastElementChild.style.height = '0';
+	        }
+	    })
+	})
+}
+
+function testimonial() {
+	prev.addEventListener('click', ()=>{
+		count--;
+		if(count === -1){
+	       count = 2;
+		   client.style.left = '-200%';
+		}
+		client.style.left = '-100' * count + '%';
+	})
+
+	next.addEventListener('click', ()=>{
+		count++;
+		if(count === 3){
+	       count = 0;
+		   client.style.left = '0';
+		}
+		client.style.left = '-100' * count + '%';
+	})
+}
+
+function setNavStorage(e){
+	localStorage.setItem('navbar-id', e.id);
+	window.open('practice-areas.html');
+}
+
+faqDive();
+testimonial();
+
+</script>
+</body>
+</html>
